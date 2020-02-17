@@ -13,6 +13,7 @@
       console.log(ph);
       while ((ph != 'y')&&(ph != 'yes')&&(ph != 'n')&&(ph != 'no')){
         ph = prompt('sorry you answer is wrong "+"\"Do you like iphone(yes)or samsung(no)?\"')
+        'use strict';
         ph=ph.toLocaleLowerCase();
         console.log("the 1 answer "+ph);
       }
