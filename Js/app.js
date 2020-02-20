@@ -7,12 +7,17 @@ var vs= visitors.toLocaleUpperCase();
 alert('hello '+ vs+' Welcome in my website my name is abdallah i want to play guessing game');
 alert('i will ask you simple 7 questions and you have to guess the correct answer are you ready ');
 
+
 var answer_1 = prompt('how old do you think my age 4 Chances?');
+
 // console.log(answer_1);
 var correct=false;
+
 answer_1= Number(answer_1);
 // console.log('the #1 answer '+typeof( answer_1));
 function myAge(answer_1) {
+  answer_1= Number(answer_1);
+  // console.log('the #1 answer '+typeof( answer_1));
   for (var i = 0; i < 4; i++) {
     if (answer_1 === 23) {
       alert('good job you guess it  1/7');
@@ -30,6 +35,7 @@ function myAge(answer_1) {
       answer_1= Number(answer_1);
       correct=false;
     }
+
   }
   if (correct===true){
     alert(' next questions');
@@ -43,7 +49,9 @@ myAge(answer_1);
 var carType =['ford','mercedes','mercedes','nissan' ];
 var rightanswer=false;
 var answer_2=prompt('try to guess the type of car i select  you have 6 Chances ?');
+
 function car(answer_2) {
+
   for (let y = 0; y < 5; y++){
     // console.log(answer_2);
     for (let r = 0; r < carType.length; r++) {
@@ -62,11 +70,8 @@ function car(answer_2) {
   }
   alert('that was the correct answer   '+ '\' '+ carType +' \'');
 }
+
 car(answer_2);
-
-
-
-
 
 var marriage = prompt('Are you married ?');
 //console.log('the 2 answer '+marriage);
@@ -74,8 +79,10 @@ var ma = marriage.toLowerCase();
 // ma the marriage with lowercase function
 //console.log(ma);
 
+
 function married (ma) {
   while ((ma !== 'y')&&(ma !== 'yes')&&(ma !== 'n')&&(ma !== 'no')){
+
     // eslint-disable-next-line no-useless-escape
     ma = prompt(' sorry you answer is wrong ' +'\"Are you married ? \"');
     ma = ma.toLowerCase();
@@ -91,7 +98,9 @@ function married (ma) {
     alert('me to single live is good hahah ');
   }
 }
+
 married(ma);
+
 
 
 
@@ -120,8 +129,6 @@ travel1(tr);
 
 
 
-
-
 var read= prompt (' Did you like to read ? ');
 // console.log('the 4 awnser '+read);
 var re =read.toLocaleLowerCase();
@@ -146,11 +153,18 @@ function read1(re) {
 read1(re);
 
 
+
+
+
+
+
+
 var tec= prompt ('Did you like technology ? ');
 // console.log('the 5 awnser '+t);
 var t =tec.toLocaleLowerCase();
 // t the tec with lowercase function
 // console.log(t);
+
 
 function tecnology(t) {
   while ((t !== 'y')&&(t !== 'yes')&&(t !=='n')&&(t !== 'no')){
@@ -160,7 +174,6 @@ function tecnology(t) {
     // console.log('the 7 answer '+tec);
   }
   if ((t === 'yes')||(t === 'y')){
-  
     alert('that amazing go learn some code language so you can be involve 6/7');
     grade++;
     // console.log(grade);
@@ -169,8 +182,12 @@ function tecnology(t) {
     alert('sorry but go die ');
     grade++;
   }
+
 }
 tecnology(t);
+
+
+
 
 
 var enjoy= prompt ('Did you enjoy guessing game ? ');
@@ -178,6 +195,7 @@ var enjoy= prompt ('Did you enjoy guessing game ? ');
 var en =enjoy.toLocaleLowerCase();
 // t the tec with lowercase function
 // console.log(t);
+
 function enjoy1(en) {
   while ((en !== 'y')&&(en !== 'yes')&&(en !=='n')&&(en !== 'no')){
     // eslint-disable-next-line no-useless-escape
@@ -198,3 +216,6 @@ enjoy1(en);
 
 
 alert('thank you ' + visitors + ' i enjoy playing with you your grade is  ' + grade+'  / 7   good i hope you have good day ');
+
+
+
