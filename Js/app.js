@@ -1,7 +1,7 @@
 'use strict';
 var grade=0;
-var visitor= prompt('what is your name ?');
-var vs= visitor.toLocaleUpperCase();
+var visitors= prompt('what is your name ?');
+var vs= visitors.toLocaleUpperCase();
 // //vs is the visitor with uppercase function
 // console.log('the visitor name '+vs);
 alert('hello '+ vs+' Welcome in my website my name is abdallah i want to play guessing game');
@@ -38,8 +38,6 @@ function myAge(answer_1) {
   }
 }
 myAge(answer_1);
-
-
 
 
 var carType =['ford','mercedes','mercedes','nissan' ];
@@ -199,4 +197,4 @@ function enjoy1(en) {
 enjoy1(en);
 
 
-alert('thank you ' + visitor + ' i enjoy playing with you your grade is  ' + grade+'  / 7   good i hope you have good day ');
+alert('thank you ' + visitors + ' i enjoy playing with you your grade is  ' + grade+'  / 7   good i hope you have good day ');
